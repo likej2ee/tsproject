@@ -1,0 +1,99 @@
+////
+/// reset html tag
+///
+/// @group common
+/// @author xjq
+////
+body,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select,
+button,
+blockquote,
+th,
+td,
+hr,
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+footer,
+section,
+hgroup,
+menu,
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+
+  color: $font-color-base;
+}
+
+ol,
+ul,
+li {
+  list-style: none outside none;
+}
+
+img {
+  border: 0;
+}
+
+input,
+a,
+select,
+button,
+textarea {
+  outline: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+
+  color: $font-color-base;
+  &:visited {
+    color: $font-color-base;
+  }
+  &:hover {
+    text-decoration: underline;
+
+    color: $primary-color;
+  }
+  &:active {
+    color: $font-color-base;
+  }
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}

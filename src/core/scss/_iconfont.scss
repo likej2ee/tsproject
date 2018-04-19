@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('fonts/icomoon.eot?hsrnn0');
+  src: url('fonts/icomoon.eot?hsrnn0#iefix') format('embedded-opentype'),
+  url('fonts/icomoon.ttf?hsrnn0') format('truetype'),
+  url('fonts/icomoon.woff?hsrnn0') format('woff'),
+  url('fonts/icomoon.svg?hsrnn0#icomoon') format('svg');
+}
+
+[class^='ficon-'],
+[class*=' ficon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+
+  text-transform: none;
+  /* Better Font Rendering =========== */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ficon-rmb:before {
+  content: '\e900';
+}
+.ficon-password:before {
+  content: '\e901';
+}
+.ficon-hidden:before {
+  content: '\e902';
+}
+.ficon-top:before {
+  content: '\e903';
+}
+.ficon-username:before {
+  content: '\e904';
+}

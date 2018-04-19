@@ -1,0 +1,32 @@
+.p-img.lazy {
+  background-image: url('images/loading.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.p-img {
+  overflow: hidden;
+  &.dynamic {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      max-width: 100%;
+      max-height: 100%;
+
+      transform: translate(-50%, -50%);
+    }
+  }
+  img {
+    display: block;
+
+    opacity: 0;
+    &.active {
+      transition: opacity 600ms linear;
+
+      opacity: 1;
+    }
+  }
+}

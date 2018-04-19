@@ -1,0 +1,110 @@
+////
+/// 动画效果
+/// https://github.com/daneden/animate.css
+///
+/// @group common
+/// @author xjq
+////
+.animated {
+  animation-duration: 1s;
+
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+// 渐入
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+// 渐出
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+// 下方渐入
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+
+    opacity: 0;
+  }
+  to {
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+// 上方渐入
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(0, -100%, 0);
+
+    opacity: 0;
+  }
+}
+
+.fadeOutUp {
+  animation-name: fadeOutUp;
+}
+
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.fade-enter-active {
+  transition: all .4s cubic-bezier(1.0, .5, .8, 1.0);
+}
+.fade-leave-active {
+  transition: all 0s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.fade-in-down-enter-active {
+  transition: all .4s linear;
+}
+.fade-in-down-leave-active {
+  transition: all 0s;
+}
+.fade-in-down-enter,
+.fade-in-down-leave-to {
+  transform: translate3d(0, -20px, 0);
+
+  opacity: 0;
+}

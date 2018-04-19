@@ -1,0 +1,12 @@
+{
+  "data": [{
+    "name": "示例",
+    "menus": [{
+      "name": "Welcome Home",
+      "link": "/"
+    }, {
+      "name": "WebSocket Demo",
+      "link": "/demo/websocket/0"
+    }]
+  }]
+}

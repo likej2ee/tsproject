@@ -1,0 +1,51 @@
+{
+  "_comment": "See http://eslint.cn/docs/rules/ for more details",
+  "extends": "eslint:recommended",
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "amd": true
+  },
+  "globals": {
+    "__DEV__": true,
+    "__TEST__": true,
+    "__PRODUCTION__": true,
+    "__dirname": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": [0],
+    "no-cond-assign": [2, "always"],
+    "semi": [0, "never"],
+    "comma-dangle": [0, "never"],
+    "indent": [0, 4, {
+      "SwitchCase": 1,
+      "MemberExpression": 1,
+      "ObjectExpression": 1
+    }],
+    "keyword-spacing": [2, {
+      "before": true,
+      "after": true
+    }],
+    "space-infix-ops": [2, {
+      "int32Hint": false
+    }],
+    "linebreak-style": [2, "unix"],
+    "quotes": [2, "single"],
+    "no-unexpected-multiline": [2],
+    "object-curly-newline": [2, {
+      "ObjectExpression": {
+        "minProperties": 1
+      },
+      "ObjectPattern": {
+        "multiline": true
+      }
+    }],
+    "object-property-newline": 2
+  }
+}
