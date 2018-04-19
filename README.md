@@ -19,7 +19,7 @@
 # 安装依赖
 $ npm install
 
-# 运行开发环境(启动webserver和webpack监听任务)
+# 运行开发环境(启动webserver和webpack监听任务)
 $ npm run dev
 
 ```
